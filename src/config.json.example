@@ -1,5 +1,7 @@
 {
     "token": "DISCORD BOT TOKEN",
     "clientId": "DISCORD BOT CLIENTID",
-    "carterkey": "CARTER API KEY"
+    "carterkey": "CARTER API KEY",
+    "channelmode": "on or off",
+    "channelid": "ID of channel if channelmode is set to on"
 }

@@ -7,7 +7,8 @@ module.exports = {
 		const msg = await message.content
 	
 		if(message.author.id === config.clientId) return; // Returns if message is itself
-		if(message.channel.isDMBased()) { // If channel is not a DM
+
+		if(message.channel.isDMBased() || config.channelmode === "on" && message.channel.id === config.channelid) {
 			try {
 				await message.channel.sendTyping()
 				await fetch("https://api.carterapi.com/v0/chat", {
@@ -37,6 +38,8 @@ module.exports = {
 			} catch(error) {
 				console.log(error)
 			}
+		} else {
+			return;
 		}
 	},
 };
