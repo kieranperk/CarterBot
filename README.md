@@ -12,10 +12,7 @@ npm i
 ```
 After the modules have been installed, head to the config.json.example file and fill out the values.
 
-Finally, run the bot by executing:
-```
-node .
-```
+Finally, run the bot by executing the start.bat file.
 
 ### Inviting the bot to your server:
 Firstly, you will need to create your bot in the [Discord Developer Portal](https://discord.com/developers/applications/). Click New Application, provide the name of your bot, and then click create.
@@ -29,6 +26,7 @@ Finally, go to OAuth2 > Url Generator tab and select the 'bot' and 'applications
 This project allows for:
 - Real time user conversations in DMS
 - Message downvoting
+- Slash commands
 
 ## Known Issues:
 
