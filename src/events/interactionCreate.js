@@ -24,9 +24,9 @@ module.exports = {
 
         } else if (interaction.isButton()) {
             if (interaction.customId.startsWith('message_downvote_')) {
-                const tid = await interaction.customId.replace('message_downvote_', '').split('_');
+                const tid = await interaction.customId.replace('message_downvote_', '').split('_'); // Gets response TID from end of button ID
 
-                await fetch("https://api.carterapi.com/v0/downvote", {
+                await fetch("https://api.carterapi.com/v0/downvote", { // Sends downvote request to CarterAPI
                     method: "POST",
                     headers: {
                         Accept: "application/json",
@@ -38,7 +38,7 @@ module.exports = {
                     }),
                 });
 
-                const row1 = new ActionRowBuilder()
+                const row1 = new ActionRowBuilder() // Downvote button builder
                 .addComponents(
                     new ButtonBuilder()
                     .setCustomId('message_downvote' + Math.random() * 1000)
@@ -49,7 +49,7 @@ module.exports = {
                 );
                 
                 await interaction.update({ components: [row1] });
-                await interaction.channel.send({ content: 'Message has been downvoted!' })
+                await interaction.channel.send({ content: '`Message has been downvoted!\`', ephemeral: true }) // Sends response to channel
             }
         }
     },

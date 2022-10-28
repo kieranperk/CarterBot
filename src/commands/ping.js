@@ -5,9 +5,9 @@ module.exports = {
 		.setName('ping')
 		.setDescription('Replies with Pong!'),
 	async execute(interaction) {
-		const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true, ephemeral: true });
+		const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true, ephemeral: true }); // Reply's to user with message
 
-		const embed = new EmbedBuilder()
+		const embed = new EmbedBuilder() // Embed builder
             .setColor('#f3974f')
             .setTitle('🏓 Pong!')
             .setDescription(`
@@ -16,6 +16,6 @@ module.exports = {
 			⌚ Uptime: <t:${parseInt(interaction.client.readyTimestamp / 1000)}:R>
 			`)
 
-		interaction.editReply({ content: '', embeds: [embed] });
+		interaction.editReply({ content: '', embeds: [embed] }); // Updates reply
 	},
 };
