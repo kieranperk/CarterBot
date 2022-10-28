@@ -1,0 +1,18 @@
+{
+  "name": "carterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node deploy-commands.js"
+  },
+  "author": "MountainT144#9733",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "discord.js": "^14.3.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.2.10",
+    "path": "^0.12.7"
+  }
+}
