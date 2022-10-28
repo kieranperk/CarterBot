@@ -31,6 +31,7 @@ module.exports = {
 							.setEmoji('⬇️')
 							.setStyle(ButtonStyle.Primary),
 					);
+					console.log('Message has been sent')
 					message.reply({ content: `${data.output.text}`, components: [row1] })
 				})
 			} catch(error) {

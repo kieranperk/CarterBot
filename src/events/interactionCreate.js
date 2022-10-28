@@ -24,7 +24,7 @@ module.exports = {
 
         } else if (interaction.isButton()) {
             if (interaction.customId.startsWith('message_downvote_')) {
-                const tid = interaction.customId.replace('message_downvote_', '').split('_');
+                const tid = await interaction.customId.replace('message_downvote_', '').split('_');
 
                 await fetch("https://api.carterapi.com/v0/downvote", {
                     method: "POST",
@@ -48,8 +48,8 @@ module.exports = {
                     .setDisabled(true),
                 );
                 
-                interaction.update({ components: [row1] });
-                interaction.reply({ content: 'Message has been downvoted!', ephemeral: true})
+                await interaction.update({ components: [row1] });
+                await interaction.channel.send({ content: 'Message has been downvoted!' })
             }
         }
     },
