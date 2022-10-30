@@ -30,4 +30,5 @@ This project allows for:
 
 ## Known Issues:
 
-```NO KNOWN ISSUES```
+```MESSAGE SPAM ERROR```
+- If you send two messages at once to the bot, it will crash. (Working on a fix)
