@@ -11,9 +11,13 @@ module.exports = {
 			try {
 				await message.channel.sendTyping()
 
+				const options = {
+					uuid: message.author.id // Optional
+				}
+
 				const usermsg = await message.content // Defines the provided message query
 				const carter = new Carter(config.carterkey)
-				const response = await carter.say(usermsg)
+				const response = await carter.say(usermsg, options)
 				const reply_message = response.data.output.text
 
 				const row1 = new ActionRowBuilder() // Downvote button builder
@@ -25,7 +29,7 @@ module.exports = {
 						.setStyle(ButtonStyle.Secondary),
 				);
 				
-				const msg = await message.channel.send({ content: `${reply_message}`, components: [row1] }) // Sends response to channel
+				const msg = await message.reply({ content: `${reply_message}`, components: [row1], allowedMentions: { repliedUser: false } }) // Sends response to channel
 
 				const collector = msg.createMessageComponentCollector({ componentType: ComponentType.Button, time: 15000 });
 				collector.on('collect', async i => {
