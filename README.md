@@ -1,7 +1,7 @@
 <a href="https://www.carterapi.com"><img src="https://151297354-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FciRkFwFdI6llRRifmbqJ%2Fuploads%2FrWJk4wUxapMwAgqOV3Np%2FBUILT-WITH-CARTER.svg?alt=media&token=32f7a446-b9b8-4ded-9263-1c11158c9c2f" style="width: 200px;" /></a>
 
 # CarterBot
-This is a project which intergrates www.carterapi.com into a discord bot. It utilizes the discord.js framework with Carter API to provide a realtime conversation through a users DM!
+This is a project which integrates www.carterapi.com into a discord bot. It utilizes the discord.js framework with Carter API to provide a real-time conversation through a users DM!
 
 ## Getting started:
 To self-host the bot, first download the repository and extract it to a directory.
