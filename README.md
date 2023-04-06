@@ -1,34 +1,30 @@
-<a href="https://www.carterapi.com"><img src="https://151297354-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FciRkFwFdI6llRRifmbqJ%2Fuploads%2FrWJk4wUxapMwAgqOV3Np%2FBUILT-WITH-CARTER.svg?alt=media&token=32f7a446-b9b8-4ded-9263-1c11158c9c2f" style="width: 200px;" /></a>
+<h1 align="center">
+  CarterBot
+</h1>
+<p align="center">
+  <a href="https://github.com/kieranperk/CarterBot/stargazers"><img src="https://img.shields.io/github/stars/kieranperk/CarterBot?color=ffcb6b"></a>
+  <a><img src="https://img.shields.io/github/contributors/kieranperk/CarterBot?color=ffcb6b"></a>
+</p>
+<h5 align="center">Bringing Artificial Inteligence to Discord using <a href="https://carterlabs.ai/">Carter</a>!</h5>
 
-# CarterBot
-This is a project which integrates www.carterapi.com into a discord bot. It utilizes the discord.js framework with Carter API to provide a real-time conversation through a users DM!
+---
 
-## Getting started:
-To self-host the bot, first download the repository and extract it to a directory.
+## 📚 Features
+- [x] Real Time User Conversations in Discord DMs
+- [x] Slash commands
 
-Then, making sure you have node.js installed, run the following command to install all the node modules:
-```
-npm i
-```
-After the modules have been installed, head to the config.json.example file and fill out the values.
+## 📂 Installation
 
-Finally, run the bot by executing the start.bat file.
+First, download the repository [here](https://github.com/kieranperk/CarterBot/releases/latest) and extract the zip. From there, you just need to fill out the `config.example.json` file, and then rename it to `config.json`. 
 
-### Inviting the bot to your server:
-Firstly, you will need to create your bot in the [Discord Developer Portal](https://discord.com/developers/applications/). Click New Application, provide the name of your bot, and then click create.
+## 📈 Usage
 
-Then, on the left, you will see a new bot tab. Enter that and create a new bot.
-**MAKE SURE TO TURN ON THE "MESSAGE CONTENT INTENT" OPTION OR ELSE THE BOT WILL NOT FUNCTION**
+To run CarterBot, just execute the `start.bat` file. This should install all the necessary modules and then execute the startup sequence. If the `config.json` file is correct, the bot should respond with a message stating that it has logged in and online.
 
-Finally, go to OAuth2 > Url Generator tab and select the 'bot' and 'applications.commands' scopes. This should generate a url below which you can use to invite the bot to your server!
+## 🤝 Contributing
+Pull requests are welcome.
 
-## Features:
-This project allows for:
-- Real time user conversations in DMS
-- Message downvoting
-- Slash commands
+Please make sure to test as appropriate.
 
-## Known Issues:
-
-```MESSAGE SPAM ERROR```
-- If you send two messages at once to the bot, it will crash. (Working on a fix)
+## 📜 License
+[MIT](https://choosealicense.com/licenses/mit/)

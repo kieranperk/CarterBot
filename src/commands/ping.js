@@ -8,7 +8,7 @@ module.exports = {
 		const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true, ephemeral: true }); // Reply's to user with message
 
 		const embed = new EmbedBuilder() // Embed builder
-            .setColor('#f3974f')
+            .setColor('#ffcb6b')
             .setTitle('🏓 Pong!')
             .setDescription(`
 			💗 Heartbeat: \`${interaction.client.ws.ping}ms.\`
