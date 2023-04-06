@@ -18,16 +18,16 @@ module.exports = {
                     .setURL('https://github.com/kieranperk/CarterBot')
                     .setStyle(ButtonStyle.Link),
 				new ButtonBuilder()
-					.setLabel('CarterAPI')
+					.setLabel('Carter')
 					.setEmoji('<:CarterAPI:1035567736325156867>')
-                    .setURL('https://www.carterapi.com/')
+                    .setURL('https://carterlabs.ai/')
 					.setStyle(ButtonStyle.Link),
 			);
         
         const embed = new EmbedBuilder() // Embed builder
-            .setColor('#f3974f')
+            .setColor('#ffcb6b')
             .setTitle('📚 About CarterBot')
-            .setDescription(`CarterBot is a project which intergrates [CarterAPI](https://www.carterapi.com/) into a discord bot. It utilizes the Discord.JS framework with CarterAPI to provide a realtime conversation through a users DM.`)
+            .setDescription(`CarterBot is a project which integrates [Carter](https://carterlabs.ai/) into a discord bot. It utilizes the Discord.JS framework with Carter to provide a realtime conversation through a users DM.`)
             .addFields(
                 { name: 'Server Count:', value: String(interaction.client.guilds.cache.size)  },
             )

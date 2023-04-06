@@ -1,6 +1,7 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
 const { Carter } = require('carter-js');
 const config = require('../config.json');
+const term = require( 'terminal-kit' ).terminal;
 
 module.exports = {
 	name: 'messageCreate',
