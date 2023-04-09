@@ -33,6 +33,6 @@ module.exports = {
             )
             .setThumbnail(interaction.client.user.displayAvatarURL({ extension: 'jpg' }))
 
-        interaction.reply({ embeds: [embed], components: [row1] }); // Reply's to user with response
+        interaction.reply({ embeds: [embed], components: [row1], ephemeral: true }); // Replies to user with response
 	},
 };
