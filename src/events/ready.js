@@ -17,7 +17,6 @@ module.exports = {
 				fit: true   // Activate all expand/shrink + wordWrap
 			}
 		) ;
-		console.log("Test")
 	    client.user.setActivity('DMs! | carterlabs.ai', { type: ActivityType.Watching }); // Bot status
     },
 };

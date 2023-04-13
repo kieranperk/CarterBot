@@ -23,7 +23,6 @@ module.exports = {
                     .setURL('https://carterlabs.ai/')
 					.setStyle(ButtonStyle.Link),
 			);
-        
         const embed = new EmbedBuilder() // Embed builder
             .setColor('#ffcb6b')
             .setTitle('📚 About CarterBot')
@@ -32,7 +31,6 @@ module.exports = {
                 { name: 'Server Count:', value: String(interaction.client.guilds.cache.size)  },
             )
             .setThumbnail(interaction.client.user.displayAvatarURL({ extension: 'jpg' }))
-
         interaction.reply({ embeds: [embed], components: [row1] }); // Reply's to user with response
 	},
 };
