@@ -15,7 +15,7 @@
 
 ## 📂 Installation
 
-First, download the repository [here](https://github.com/kieranperk/CarterBot/releases/latest) and extract the zip. From there, you just need to fill out the `config.example.json` file, and then rename it to `config.json`. 
+Head over to my [Wiki Page](https://kieranperk.gitbook.io/carterbot/) for details on how to install and setup the bot!
 
 ## 📈 Usage
 

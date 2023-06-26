@@ -1,7 +1,7 @@
 {
   "name": "carterbot",
-  "version": "2.0.0",
-  "description": "The Open-Source Discord bot coded with Discord.JS, Carter.JS and CarterAI!",
+  "version": "2.0.1",
+  "description": "The Open-Source Discord bot coded with Discord.JS, Carter-JS and CarterAI!",
   "main": "index.js",
   "scripts": {
     "deploy": "node deploy-commands.js",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@discordjs/rest": "^1.7.0",
-    "carter-js": "^2.0.2",
+    "carter-js": "^4.0.1",
     "discord.js": "^14.9.0",
     "fs": "^0.0.1-security",
     "node-fetch": "^3.2.10",

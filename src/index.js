@@ -2,9 +2,13 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, GatewayIntentBits, Partials } = require('discord.js');
 const config = require('./config.json');
+const Carter = require("carter-js");
 
 // Client Intents
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.DirectMessages], partials: [Partials.Channel] });
+
+// New Carter Client
+exports.carter = new Carter(config.carterkey);
 
 // Command handler
 client.commands = new Collection();
