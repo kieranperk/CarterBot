@@ -1,4 +1,8 @@
 <h1 align="center">
+⚠️ !!! THIS PROJECT IS NO LONGER MAINTAINED !!! ⚠️
+</h1>
+<br>
+<h1 align="center">
   CarterBot
 </h1>
 <p align="center">
